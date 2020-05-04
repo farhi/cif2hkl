@@ -3,8 +3,6 @@
 #
 # just type: make
 
-FC=gfortran
-
 # simple one-shot compile
 all:	
 	${FC} -ffree-line-length-512 -O2 -o cif2hkl cif2hkl.F90 -lm
