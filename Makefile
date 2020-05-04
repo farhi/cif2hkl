@@ -1,9 +1,13 @@
 # Makefile to compile cif2hkl.
+# required: gfortran
+#
 # just type: make
+
+FC=gfortran
 
 # simple one-shot compile
 all:	
-	${FC} -O2 -o cif2hkl cif2hkl.F90 -lm
+	${FC} -ffree-line-length-512 -O2 -o cif2hkl cif2hkl.F90 -lm
 	rm *.mod
 
 clean: 
