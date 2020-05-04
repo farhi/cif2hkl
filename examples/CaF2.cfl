@@ -1,0 +1,18 @@
+Title  CaF2
+!      a           b           c          alpha   beta    gamma
+Cell   5.466935   5.466935   5.466935  90.000  90.000  90.000
+!     Space Group
+Spgr  F m -3 m
+!                x        y       z     B       occ       Spin  Charge
+Atom  Ca1 CA  0.00000  0.00000  0.00000 3.60050  0.04167   0.0   2.0
+Atom  F1  F   0.25000  0.25000  0.25000 -3.68972  0.02083   0.0  -1.0
+
+
+! abs = 0.44920 barns
+! coh = 10.8144 barns
+! inc = 0.0516 barns
+
+! total cross section = 77.2544 barns
+
+! Molecular weight = 78.0740
+! Mass density     = 2.7     g/cm3
