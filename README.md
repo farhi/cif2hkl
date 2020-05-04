@@ -63,6 +63,6 @@ Example: cif2hkl -o CaF2.laz CaF2.cfl
 
 Credits and License
 -------
-This software is (c) E. Farhi, Synchrotron Soleil with license EUPL (GPL2 compatible).
+This software is (c) E. Farhi, Synchrotron Soleil with license GPL2.
 Part of the iFit <http://ifit.mccode.org> suite.
 It is based on CrysFML (CFML) available at <https://code.ill.fr/scientific-software/crysfml>, but all required modules are all included in the cif2hkl source code.
