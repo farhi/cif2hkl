@@ -5,10 +5,12 @@ A program that computes structure factors |F^2| for neutrons, x-rays, and electr
 
 **Purpose**: Reads a CIF/CFL/SHX/PCR crystallographic description and generates a HKL F^2 reflection list.
 
-Compilation
+Installation
 -----------
 ```
-gfortran -O2 -o cif2hkl cif2hkl.F90 -lm 
+make
+make test
+sudo make install
 ```
 
 Syntax
@@ -63,7 +65,9 @@ Example: cif2hkl -o CaF2.laz CaF2.cfl
 
 Credits and License
 -------
-This software is (c) E. Farhi, Synchrotron Soleil with license GPL2.
+This software is (c) E. Farhi 
+- (C) 2009-2019 Institut Laue Langevin, EUPL
+- (C) 2020      Synchrotron Soleil,     GPL2.
 Part of the iFit <http://ifit.mccode.org> suite.
 
 It is based on CrysFML (CFML) available at <https://code.ill.fr/scientific-software/crysfml>, but all required modules are all included in the cif2hkl source code. CFML is licensed under a LGPL-3, excluding military applications.

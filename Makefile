@@ -29,5 +29,10 @@ distclean: clean
 uninstall:
 	-rm -f $(DESTDIR)$(prefix)/usr/bin/cif2hkl
 
-.PHONY: all install clean distclean uninstall
+test:
+	./cif2hkl --version
+	./cif2hkl --verbose --xtal --no-outout-files examples/CaF2.cfl
+	@echo Test OK
+
+.PHONY: all install clean distclean uninstall test
 

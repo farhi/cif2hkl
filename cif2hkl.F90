@@ -1,8 +1,10 @@
 !
 !   cif2hkl: convert a CIF or CFL crystal structure file into a PowderN reflection list.
 !
-!   cif2hkl 1.1 (18 Dec 2012) by Farhi E. [farhi@ill.fr] using crysFML <http://forge.ill.fr/projects/crysfml>
-!   Copyright (C) 2009 Institut Laue Langevin, EUPL license.
+!   cif2hkl 1.2.1 (May 5th 2020) by [emmanuel.farhi@synchrotron-soleil.fr]
+!     Farhi E. using crysFML <http://forge.ill.fr/projects/crysfml>
+!   Copyright (C) 2009-2019 Institut Laue Langevin, EUPL
+!   Copyright (C) 2020      Synchrotron Soleil,     GPL2.
 !   This is free software; see the source for copying conditions.
 !   There is NO warranty; not even for MERCHANTABILITY or FITNESS
 !   FOR A PARTICULAR PURPOSE.
@@ -536,7 +538,7 @@ subroutine CFML_cif2hkl(file_in, file_out, lambda, powxtal, verbose, message, mo
             A%atom(i)%Biso,A%atom(i)%Occ,A%atom(i)%moment,A%atom(i)%Charge
     end do
     write(unit=lun,fmt="(a)")        "# COMMAND cif2hkl "//trim(file_in)//" --output "//trim(file_out)
-    write(unit=lun,fmt="(a)")        "# CIF2HKL (c) ILL 2012 E. Farhi <farhi@ill.eu> based on CrysFML"
+    write(unit=lun,fmt="(a)")        "# CIF2HKL (c) Synchrotron Soleil 2020 E. Farhi <farhi@ill.eu> based on CrysFML"
     write(unit=lun,fmt=1000) today, now
   1000 format ( '# DATE    ', i2.2, '/', i2.2, '/', i4.4, ' at ', i2.2, ':', i2.2, ':', i2.2)
     write(unit=lun,fmt="(a)") "#"  
@@ -600,18 +602,19 @@ subroutine print_version(pgmname,message)
   character*1024 pgmname
   character*1024, intent(out) :: message
   
-  character*80 AUTHOR, DATE, VERSION
+  character*256 AUTHOR, DATE, VERSION
   character*2   eol
   
   eol=char(13)//char(10)
   
-  AUTHOR ="Farhi E. [farhi@ill.fr] using crysFML <http://forge.ill.fr/projects/crysfml>"
-  DATE   ="11 Mar 2016"
-  VERSION="1.2"
+  AUTHOR ="Farhi E. [emmanuel.farhi@synchrotron-soleil.fr]"//eol//"  using crysFML <http://forge.ill.fr/projects/crysfml>"
+  DATE   ="May 5th 2020"
+  VERSION="1.2.1"
   
   
   message = trim(pgmname)//" "//trim(VERSION)//" ("//trim(DATE)//") by "//trim(AUTHOR)//eol//&
-   "  Copyright (C) 2009 Institut Laue Langevin, EUPL license."//eol//&
+   "  Copyright (C) 2009-2019 Institut Laue Langevin, EUPL."//eol//&
+   "  Copyright (C) 2020      Synchrotron Soleil,     GPL2."//eol//&
    "  This is free software; see the source for copying conditions."//eol//&
    "  There is NO warranty; not even for MERCHANTABILITY or FITNESS"//eol//&
    "  FOR A PARTICULAR PURPOSE."//eol
