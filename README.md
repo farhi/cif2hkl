@@ -1,9 +1,9 @@
 # cif2hkl
 A program that computes structure factors |F^2| for neutrons, x-rays, and electrons
 
-**cif2hkl** - CrysFML based utility for generating .lau files for McStas.
+**cif2hkl** - CrysFML based utility for generating .lau/.laz files for e.g. [McStas](http://www.mcstas.org).
 
-Action: Read a CIF/CFL/SHX/PCR crystallographic description and generates a HKL F^2 reflection list.
+**Purpose**: Reads a CIF/CFL/SHX/PCR crystallographic description and generates a HKL F^2 reflection list.
 
 Compilation
 -----------
@@ -65,4 +65,5 @@ Credits and License
 -------
 This software is (c) E. Farhi, Synchrotron Soleil with license GPL2.
 Part of the iFit <http://ifit.mccode.org> suite.
-It is based on CrysFML (CFML) available at <https://code.ill.fr/scientific-software/crysfml>, but all required modules are all included in the cif2hkl source code.
+
+It is based on CrysFML (CFML) available at <https://code.ill.fr/scientific-software/crysfml>, but all required modules are all included in the cif2hkl source code. CFML is licensed under a LGPL-3, excluding military applications.
