@@ -1,5 +1,7 @@
 # cif2hkl
-A program that computes structure factors |F^2| for neutrons, x-rays, and electrons
+A program that computes structure factors |F^2| for neutrons, x-rays, and electrons.
+
+⚠️ this repository is obsolete. Please go to https://gitlab.com/soleil-data-treatment/soleil-software-projects/cif2hkl ⚠️
 
 **cif2hkl** - CrysFML based utility for generating .lau/.laz files for e.g. [McStas](http://www.mcstas.org).
 
